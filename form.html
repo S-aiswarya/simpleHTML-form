@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>task1</title>
+	<style type="text/css">
+       *
+       {
+        background-color: #77072a;
+       }
+    form
+    {
+        position: relative;
+        width: 600px;
+        height: 500px;
+        left: 370px;
+        font-family: sans-serif;
+        background-color: white;
+        
+    }
+label{
+     width: 100px;
+     display: inline-block;
+     margin-left: 105px;
+     color: #77072a;
+     background-color: white;
+     font-weight: bold;
+
+}
+
+input[type=text],
+input[type=tel],
+input[type=date],
+input[type=email],
+input[type=password]
+{
+  padding: 10px 48px;
+  margin-top: 15px;
+  margin-left: 5px;
+  color: #77072a;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid dimgray;
+
+}
+input[type=button]
+{
+  padding: 10px 90px;
+  margin-top: 4px;
+  margin-left: 220px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  background-color:  #77072a;
+  font-family: sans-serif;
+
+}
+h1{
+   color: white;
+}
+input[type=text]:hover
+{
+   background-color:#77072a;
+   color: white; 
+}
+input[type=email]:hover
+{
+   background-color:#77072a;
+   color: white; 
+}
+input[type=password]:hover
+{
+   background-color:#77072a;
+   color: white; 
+}
+input[type=tel]:hover
+{
+   background-color:#77072a;
+   color: white; 
+}
+input[type=date]:hover
+{
+   background-color:#77072a;
+   color: white; 
+}
+input[type=button]:hover
+{
+   background-color:whitesmoke;
+   color:#77072a;
+}
+</style>
+
+
+</head>
+<body>
+       <center><h1>REGISTER HERE!</h1></center>
+
+	<form>
+    
+    
+    <label for="fname">First name :</label>
+    <input type="text" name="fname" required><br><br>
+
+    <label for="email">Email :</label>
+    <input type="email" name="email" required><br><br>
+
+     <label for="password">Passowrd :</label>
+    <input type="password" name="password" required><br><br>
+
+   
+    <label for="bday">DOB :</label>
+    <input type="date" id="bday" name="bday" required><br><br>
+
+    <label for="phone">Phone number :</label>
+    <input type="tel"  name="phone" required><br><br>
+
+    <input type="button" value="REGISTER" onclick="msg()">
+	</form>
+
+	<script type="text/javascript">
+     function msg(){
+     	alert("registered successfully");
+     }
+	</script>
+</body>
+</html>
